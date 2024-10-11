@@ -1,0 +1,147 @@
+
+.Servicios_Main_Container{
+    display: grid;
+    justify-items: center;
+    background-image: url("/assets/resources/fondo_servicios.jpg");
+    background-size:unset;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    padding-bottom: 40px;
+}
+
+
+.Servicios_Main_Container h1{
+    font-family:Montserrat;
+    font-style:italic;
+    font-size: 32pt;
+    color:#618b35;
+    font-weight: 800;
+    margin-bottom: 30px;
+
+}
+
+
+.Servicios_List_Container{
+    display: grid;
+    row-gap: 50px;
+    width: 75%;
+}
+
+.Servicios_List_Card{
+    background-color: #edeae6;
+    width: 100%;
+    height: 260px;
+    border-radius:20px;
+    padding: 30px;
+    padding-left: 40px;
+    padding-right: 30px;
+}
+
+.Servicios_List_Card_Img{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.Servicios_List_Card_Img img{
+    width: 200px;
+}
+
+.Servicios_List_Card_Text h2{
+    color:#0f3714;
+    font-family:Montserrat;
+    font-weight: 600;
+    font-size: 16pt;
+    margin-bottom:20px;
+}
+
+
+
+.Servicios_List_Card_Text p{
+    font-family:Montserrat;
+    font-style:italic;
+    font-weight: 800;
+    font-size: 13px;
+    color: #112120;
+    text-align: justify;
+}
+
+
+.ItemIzq{
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+}
+
+.ItemDer{
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+}
+
+.text_Izq h2{
+    text-align:left;
+}
+
+.text_Der h2{
+    text-align:left;
+}
+
+@media (max-width: 950px) {
+
+
+    .Servicios_List_Card_Text h2{
+        font-size: 14pt;
+        text-align: center;
+    }
+
+    .Servicios_List_Card_Text p{
+        font-size: 12px;
+    }
+
+    .Servicios_List_Container{
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 800px) {
+    
+    .Servicios_Main_Container{
+        background-size:contain;
+        background-position:bottom; 
+    }
+
+    .Servicios_List_Card{
+        height: 400px;
+    }
+
+
+    .ItemIzq{
+        grid-template-columns: 1fr;
+        grid-template-rows: 4fr 3fr;
+        grid-template-areas: 
+        "img"
+        "texto";
+        row-gap: 15px;
+    }
+
+    .ItemDer{
+        grid-template-columns: 1fr;
+        grid-template-rows: 4fr 3fr;
+        grid-template-areas: 
+        "img"
+        "text";
+        row-gap: 15px;
+    }
+
+    .Servicios_List_Card_Img{
+        grid-area: img;
+    }
+
+
+}
+
+@media (max-width: 460px) {
+    .Servicios_List_Card{
+        height: 500px;
+    }
+}

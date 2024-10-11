@@ -1,0 +1,132 @@
+.Footer {
+  position: relative;
+  background-color: #edeae6;
+  padding: 20px 0;
+  border-top: 1px solid #eaeaea;
+}
+
+.FooterContainer {
+  display: flex;
+  justify-content: flex-start; /* Alinea los elementos al inicio */
+  align-items: center; /* Alinea verticalmente los elementos */
+  width: 100%;
+  margin: 0 auto; /* Centra el contenedor en la página */
+  padding: 0 20px; /* Espaciado interno */
+}
+
+.ContactList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.ContactTitle {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.ContactList li {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.FooterLogo {
+  position: absolute; /* Posiciona el logo absolutamente */
+  top: 50%; /* Alinea verticalmente en el centro */
+  left: 50%; /* Alinea horizontalmente en el centro */
+  transform: translate(-50%, -50%); /* Centra el logo */
+}
+
+.FooterLogo img {
+  width: 150px; /* Tamaño máximo del logo */
+  height: auto;
+}
+
+
+.ContactList{
+  padding-left: 20px;
+}
+
+
+.ContactTitle{
+  color:#113710 !important;
+  font-weight: 900;
+  font-family:Montserrat;
+  font-style:italic;
+  font-size: 20px;
+  
+}
+
+
+.ContactItem{
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  width: 200px;
+  font-weight: 800;
+  font-family:Montserrat;
+  font-style:italic;
+  align-items: center;
+  color:#113710 !important;
+  row-gap: 10px;
+  display: flex;
+  align-self: center;
+}
+
+.telIcon{
+  width: 20px;
+}
+
+.mailIcon{
+  width: 25px;
+}
+
+.liIcon{
+  width: 25px;
+}
+
+
+
+/* Media query para dispositivos más pequeños */
+@media (max-width: 768px) {
+  .FooterContainer {
+    max-height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "logo contactos" ;
+  }
+
+  .ContactList {
+    grid-area:contactos;
+    justify-self: center;
+  }
+
+  .ContactItem{
+  }
+
+  .FooterLogo {
+    grid-area:logo;
+    justify-self: start;
+    position:static;
+    transform: none;
+  }
+}
+
+@media (max-width: 481px) {
+
+  .FooterLogo img {
+    width: 100px;
+  }
+
+
+  .ContactTitle {
+    font-size: 14px;
+  }
+
+  .ContactItem{
+    font-size: 12px;
+  }
+
+}
+
