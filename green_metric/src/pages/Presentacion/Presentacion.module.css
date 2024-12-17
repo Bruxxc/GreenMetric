@@ -1,0 +1,42 @@
+
+.Presentacion_Main_Container{
+    width: 100%; /* Ancho del área visible */
+    height: 60vh; /* Altura del área visible */
+    overflow: hidden; /* Oculta el resto de la imagen */
+    position: relative;
+    background-image: url("assets/resources/frente.jpg");
+    background-position:bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+}
+
+.Presentacion_Main_Container H1{
+    position: absolute;
+    padding-left: 10%;
+    font-family: Montserrat;
+    font-size: 48pt;
+    font-style:italic;
+    font-weight: 400;
+    color:#ffffff;
+
+}
+
+@media (max-width: 1023px){
+    .Presentacion_Main_Container img{
+        width: 300px;
+    }
+}
+@media (max-width: 800px){
+    .Presentacion_Main_Container{
+        height: 50vh; /* Altura del área visible */
+    }
+}
+
+@media (max-width: 500px){
+    
+    .Presentacion_Main_Container img{
+        width: 200px;
+    }
+}

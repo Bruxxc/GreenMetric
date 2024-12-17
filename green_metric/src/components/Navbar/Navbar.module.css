@@ -4,8 +4,11 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 20px;
     background-color: #edeae6 !important;
+    position:fixed !important;
+    z-index: 10 !important;
+    width: 100% !important;
+    height: 130px;
   }
   
   /* Contenedor del Navbar */
@@ -20,7 +23,7 @@
 .NavbarBrand img {
     display: block;
     margin: 0 auto;
-    max-width: 150px; /* Ajusta el tamaño de la imagen si es necesario */
+    max-width: 100px; /* Ajusta el tamaño de la imagen si es necesario */
 }
   
   /* Lista de navegación en fila */
@@ -36,13 +39,13 @@
     font-weight: bold !important;
     text-align: center;
     cursor: pointer;
-    color: #4b993b !important; 
+    color: #36663d !important; 
     font-family: Montserrat;
     font-weight: bold !;
     font-size: 13pt !important;
 }
 
-.NavbarItem:hover{
+.linkedLI:hover{
     background-color: #e1dcd0 !important;
 }
 
@@ -51,9 +54,11 @@
     flex-direction: column;
     align-items: center;
 }
-  
+
 
 @media (max-width: 1023px) {
+
+
     .NavbarContainer {
       flex-direction: row;
       justify-content: space-between;
@@ -68,10 +73,10 @@
     }
   
     .NavbarItem {
-      margin: 0 10px;
       font-size: 14px !important;
-      width: 100%;
+      width:100% !important;
       margin: 0 !important;
+
       
     }
 

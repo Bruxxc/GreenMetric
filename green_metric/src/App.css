@@ -3,6 +3,7 @@ html,
 body {
   height: 100%;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 .App {
@@ -14,5 +15,5 @@ body {
 .Content {
   background-color: #e1dcd0;
   flex: 1;
-  padding-top:40px;
+  margin-top: 130px;
 }

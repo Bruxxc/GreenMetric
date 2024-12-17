@@ -1,0 +1,239 @@
+.Nosotros_Main_Container{
+    display: grid;
+    justify-items: center;
+    background-size:unset;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    padding-bottom: 40px;
+}
+
+.Nosotros_Main_Container h2{
+    font-family:Montserrat;
+    font-style:italic;
+    font-size: 32pt;
+    color:#ffffff;
+    font-weight: 800;
+    margin-bottom: 30px;
+
+}
+
+
+.Nosotros_List_Container{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    row-gap: 0px;
+    width: 100%;
+    background-color: #4c983d;
+}
+
+.Nosotros_proposito_text_container{
+  width: 80%;
+
+}
+
+.Nosotros_proposito_text{
+    text-align: justify;
+    color:#edeae6;
+    font-family: Montserrat;
+    font-style:italic;
+    margin: 0px;
+}
+
+.Nosotros_List_Card {
+    display: flex;
+    align-items: center; /* Centra la imagen y el contenido verticalmente */
+    background-color: #ffffff; /* Fondo blanco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra elegante */
+    border-radius: 16px; /* Bordes redondeados */
+    overflow: hidden; /* Recorta contenido excedente */
+    width: 80%;
+    margin: 20px auto; /* Centrado horizontal */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+  
+  .Nosotros_List_Card:hover {
+    transform: translateY(-5px); /* Efecto flotante */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Contenedor para la imagen */
+  .Nosotros_List_Card_Img {
+    flex: 0 0 200px; /* Tamaño fijo para la imagen */
+    height: 200px; /* Altura de la imagen */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    margin: 20px; /* Espaciado interno */
+    border-radius: 12px; /* Bordes redondeados */
+    overflow: hidden; /* Ajusta la imagen */
+  }
+  
+  .Nosotros_List_Card_Img img {
+    width: 100%; /* Asegura que la imagen llene el contenedor */
+    height: 100%; /* Sin deformación */
+    object-fit: cover; /* Ajusta la imagen al contenedor */
+  }
+  
+  /* Contenedor del texto */
+  .Nosotros_List_Card_Content {
+    flex: 1; /* Ocupa el espacio restante */
+    display: flex;
+    flex-direction: column; /* Apila elementos verticalmente */
+    padding: 20px;
+    gap: 10px; /* Espaciado entre secciones */
+  }
+  
+  /* Nombre y cargo */
+  .Nosotros_List_Card_Header {
+    margin-bottom: 10px;
+  }
+  
+  .Nosotros_List_Card_Header h3 {
+    font-size: 1.8rem; /* Nombre destacado */
+    color: #4c983d;
+    margin: 0;
+    font-family: Montserrat;
+    font-weight: 600;
+  }
+  
+  .Nosotros_List_Card_Header h4 {
+    font-size: 1.2rem; /* Cargo */
+    color:#36663d;
+    margin: 5px 0;
+    font-style: italic;
+    font-family: Montserrat;
+  }
+  
+  /* Descripción */
+  .Nosotros_List_Card_Body {
+    font-size: 1rem; /* Tamaño del texto */
+    color: #555555;
+    line-height: 1.6; /* Mejora la legibilidad */
+    text-align: justify; /* Texto justificado */
+    font-family: Montserrat;
+    font-weight: 400;
+  }
+  
+
+
+
+
+
+
+
+  /* Tarjeta con la imagen a la derecha */
+.Nosotros_List_Card_Right {
+  display: flex;
+  align-items: center; /* Centra verticalmente el contenido */
+  background-color: #ffffff; /* Fondo blanco */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra elegante */
+  border-radius: 16px; /* Bordes redondeados */
+  overflow: hidden; /* Recorta contenido excedente */
+  width: 80%;
+  margin: 20px auto; /* Centrado horizontal */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Nosotros_List_Card_Right:hover {
+  transform: translateY(-5px); /* Efecto flotante */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.Nosotros_List_CardRight_Header{
+  text-align: right;
+}
+
+
+/* Contenedor del texto (a la izquierda) */
+.Nosotros_List_Card_Right .Nosotros_List_Card_Content {
+  flex: 1; /* Ocupa el espacio restante */
+  display: flex;
+  flex-direction: column; /* Apila elementos verticalmente */
+  padding: 20px;
+  padding-left: 20px;
+  gap: 10px; /* Espaciado entre secciones */
+  text-align: left; /* Alineación del texto */
+}
+
+.LauraImg{
+  filter: grayscale(100%);
+}
+
+/* Contenedor para la imagen (a la derecha) */
+.Nosotros_List_Card_Right .Nosotros_List_Card_Img {
+  flex: 0 0 200px; /* Tamaño fijo para la imagen */
+  height: 200px; /* Altura de la imagen */
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  margin: 20px; /* Espaciado interno */
+  border-radius: 12px; /* Bordes redondeados */
+  overflow: hidden; /* Ajusta la imagen */
+}
+
+.Nosotros_List_Card_Right .Nosotros_List_Card_Img img {
+  width: 100%; /* Asegura que la imagen llene el contenedor */
+  height: 100%; /* Sin deformación */
+  object-fit: cover; /* Ajusta la imagen al contenedor */
+}
+
+@media (max-width: 1023px) {
+  .Nosotros_List_Card,
+  .Nosotros_List_Card_Right {
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra los elementos */
+    text-align: center; /* Centra el texto */
+    width: 90%; /* Ajusta el ancho */
+    padding: 10px; /* Reduce el padding */
+  }
+
+  /* Específico para la tarjeta con imagen a la derecha */
+  .Nosotros_List_Card_Right {
+    flex-direction: column-reverse; /* Imagen arriba, texto abajo */
+  }
+
+  .Nosotros_List_Card .Nosotros_List_Card_Img,
+  .Nosotros_List_Card_Right .Nosotros_List_Card_Img {
+    flex: 0 0 auto; /* Quita la restricción de tamaño fijo */
+    width: 150px; /* Imagen cuadrada con ancho fijo */
+    height: 150px; /* Imagen cuadrada con altura fija */
+    margin: 0 0 20px; /* Espaciado inferior */
+    border-radius: 12px; /* Mantén los bordes redondeados */
+    overflow: hidden; /* Asegura que la imagen se ajuste al contenedor */
+  }
+
+  .Nosotros_List_Card .Nosotros_List_Card_Img img,
+  .Nosotros_List_Card_Right .Nosotros_List_Card_Img img {
+    width: 100%; /* Imagen llena el contenedor */
+    height: 100%; /* Mantiene la forma cuadrada */
+    object-fit: cover; /* Ajusta la imagen dentro del cuadrado sin deformarla */
+  }
+
+  .Nosotros_List_Card .Nosotros_List_Card_Content,
+  .Nosotros_List_Card_Right .Nosotros_List_Card_Content {
+    padding: 0; /* Reduce el padding interno */
+    width: 100%; /* Asegura que el contenido ocupe todo el ancho */
+  }
+
+  .Nosotros_List_Card_Header h3,
+  .Nosotros_List_Card_Header h4 {
+    margin: 10px 0; /* Espaciado entre el nombre y el cargo */
+  }
+
+  .Nosotros_List_Card_Body {
+    padding: 0 10px; /* Agrega espacio horizontal para el texto */
+  }
+
+  .Nosotros_List_CardRight_Header{
+    text-align: center;
+  }
+
+  .Nosotros_proposito_text_container{
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}

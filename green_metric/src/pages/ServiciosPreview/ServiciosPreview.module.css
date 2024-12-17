@@ -1,0 +1,211 @@
+.ServiciosPreview_Main_Container{
+    background-image: url("/assets/resources/fondo_serviciospreviewAlt.png");
+    background-size: 160% 100%;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 800px;
+    width: 100%;
+    padding: 60px;
+    display: grid;
+    justify-items: center;
+    align-items: start;
+    background-color: #0f3714;
+
+}
+
+.ServiciosPreview_Main_Container h2{
+    color:#edeae6;
+    font-family:Montserrat;
+    font-style:italic;
+    font-size: 32pt;
+    font-weight: 700;
+}
+
+
+.ServiciosPreview_List_Container{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+}
+
+.ServiciosPreview_List_Card{
+    background-color:#e1dcd0;
+    width: 350px;
+    height: 570px;
+    border-radius:20px;
+    padding: 5px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.ServiciosPreview_List_Card h3{
+    color:#0f3714;
+    font-family:Montserrat;
+    font-weight: 600;
+    font-size: 16pt;
+    text-align: center;
+}
+
+.ServiciosPreview_List_Card button{
+    background-color: #145221;
+    color: white;
+    border: none;
+    border-radius: 20px; 
+    padding: 12px 24px;
+    height: fit-content;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.ServiciosPreview_List_Card button:hover{
+    background-color: #17722b;
+    transform: scale(1.05);
+}
+
+@media (max-width: 1600px) {
+    .ServiciosPreview_List_Card{
+        width: 320px;
+    }
+}
+
+@media (max-width: 1420px) {
+    .ServiciosPreview_List_Card{
+        width: 310px;
+    }
+}
+
+
+
+@media (max-width: 1420px) {
+    .ServiciosPreview_List_Card{
+        width: 290px;
+    }
+}
+
+@media (max-width: 1380px) {
+
+    .ServiciosPreview_List_Container{
+        column-gap: 20px;
+    }
+
+    .ServiciosPreview_List_Card{
+        width: 280px;
+    }
+}
+
+@media (max-width: 1300px) {
+
+    .ServiciosPreview_Main_Container{
+        height: 1000px;
+        background-size: 160% 100%;
+        align-items: center;
+    }
+
+    .ServiciosPreview_List_Container{
+        grid-template-columns: 1fr 1fr;
+        row-gap: 15px;
+    }
+
+    .ServiciosPreview_List_Card{
+        width: 560px;
+        height: 330px;
+    }
+
+
+}
+
+
+
+@media (max-width: 1270px) {
+
+    .ServiciosPreview_List_Card{
+        width: 530px;
+    }
+
+
+}
+
+
+@media (max-width: 1200px) {
+
+    .ServiciosPreview_List_Card{
+        width: 500px;
+    }
+
+}
+
+@media (max-width: 1150px) {
+
+    .ServiciosPreview_List_Card{
+        width: 480px;
+    }
+
+
+}
+
+@media (max-width: 1100px) {
+    .ServiciosPreview_Main_Container{
+        background-image:none;
+        background-color: #0f3714;
+        height: 800px;
+        padding: 30px;
+    }
+    .ServiciosPreview_Main_Container h2{
+        padding-bottom: 10px;
+    }
+
+    .ServiciosPreview_List_Card{
+        width: 460px;
+    }
+
+
+}
+
+@media (max-width: 1023px) {
+    .ServiciosPreview_Main_Container{
+        height: 1500px;
+    }
+    .ServiciosPreview_List_Container{
+        grid-template-columns: 1fr;
+    }
+    .ServiciosPreview_List_Card{
+        width: 100%;
+    }
+
+
+}
+
+@media (max-width: 500px) {
+    .ServiciosPreview_Main_Container{
+        padding: 15px;
+    }
+}
+
+
+@media (max-width: 400px) {
+
+
+    .ServiciosPreview_List_Card h3{
+        font-size: 14pt;
+    }
+
+    .ServiciosPreview_Main_Container h2{
+        font-size: 30pt;
+        align-self: flex-start;
+    }
+}
+
+@media (max-width: 368px) {
+    .ServiciosPreview_List_Card h3{
+        font-size: 13pt;
+    }
+    .ServiciosPreview_List_Card img{
+        width: 200px;
+    }
+}

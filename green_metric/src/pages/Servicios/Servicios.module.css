@@ -7,14 +7,15 @@
     background-position: center; 
     background-repeat: no-repeat; 
     padding-bottom: 40px;
+    padding-top: 50px;
 }
 
 
-.Servicios_Main_Container h1{
+.Servicios_Main_Container h2{
     font-family:Montserrat;
     font-style:italic;
     font-size: 32pt;
-    color:#618b35;
+    color:#4c983d;
     font-weight: 800;
     margin-bottom: 30px;
 
@@ -27,14 +28,32 @@
     width: 75%;
 }
 
+
+.Servicios_trabajo_text_container{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.Servicios_trabajo_text{
+    text-align: justify;
+    color:#0f3714;
+    font-family: Montserrat;
+    font-style:italic;
+    font-weight: 500;
+    margin: 40px;
+}
+
+
 .Servicios_List_Card{
     background-color: #edeae6;
     width: 100%;
-    height: 260px;
+    height: 320px;
     border-radius:20px;
-    padding: 30px;
+    padding: 20px;
     padding-left: 40px;
     padding-right: 30px;
+    display: grid;
+    align-items: center;
 }
 
 .Servicios_List_Card_Img{
@@ -44,10 +63,10 @@
 }
 
 .Servicios_List_Card_Img img{
-    width: 200px;
+    width: 220px;
 }
 
-.Servicios_List_Card_Text h2{
+.Servicios_List_Card_Text h3{
     color:#0f3714;
     font-family:Montserrat;
     font-weight: 600;
@@ -59,13 +78,33 @@
 
 .Servicios_List_Card_Text p{
     font-family:Montserrat;
-    font-style:italic;
-    font-weight: 800;
-    font-size: 13px;
+    font-weight: 500;
+    font-size: 14px;
     color: #112120;
     text-align: justify;
 }
 
+
+.Servicios_beneficios_list{
+    font-family: Montserrat;
+    margin-top: 10px;
+}
+
+.Servicios_beneficios_list h4{
+    color:#618b35;
+    font-weight: bold;
+}
+
+.Servicios_beneficios_list ul{
+    list-style: circle;
+}
+
+.Servicios_beneficios_list li{
+    font-weight: 500;
+    font-family: Montserrat;
+    font-size: 13px;
+    padding-top: 3px;
+}
 
 .ItemIzq{
     display: grid;
@@ -85,6 +124,24 @@
     text-align:left;
 }
 
+@media (max-width: 1550px) {
+    .Servicios_List_Card{
+        height: 400px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .Servicios_List_Card{
+        height: 430px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .Servicios_List_Card{
+        height: 470px;
+    }
+}
+
 @media (max-width: 950px) {
 
 
@@ -92,6 +149,7 @@
         font-size: 14pt;
         text-align: center;
     }
+
 
     .Servicios_List_Card_Text p{
         font-size: 12px;
@@ -111,7 +169,7 @@
     }
 
     .Servicios_List_Card{
-        height: 400px;
+        height: 500px;
     }
 
 
@@ -140,8 +198,32 @@
 
 }
 
+@media (max-width: 690px) {
+    .Servicios_List_Card{
+        height: 600px;
+    }
+}
+
+@media (max-width: 590px) {
+    .Servicios_List_Card{
+        height: 700px;
+    }
+}
+
+
+
 @media (max-width: 460px) {
     .Servicios_List_Card{
-        height: 500px;
+        height: 800px;
+    }
+    .Servicios_trabajo_text{
+
+        margin: 10px;
+    }
+}
+
+@media (max-width: 380px) {
+    .Servicios_trabajo_text{
+        text-align: center;
     }
 }
