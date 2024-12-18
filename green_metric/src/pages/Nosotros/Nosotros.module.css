@@ -26,7 +26,7 @@
     padding-bottom: 30px;
     row-gap: 0px;
     width: 100%;
-    background-color: #4c983d;
+    background-color: #086816;
 }
 
 .Nosotros_proposito_text_container{
@@ -94,7 +94,7 @@
   
   .Nosotros_List_Card_Header h3 {
     font-size: 1.8rem; /* Nombre destacado */
-    color: #4c983d;
+    color: #145221;
     margin: 0;
     font-family: Montserrat;
     font-weight: 600;
@@ -102,7 +102,7 @@
   
   .Nosotros_List_Card_Header h4 {
     font-size: 1.2rem; /* Cargo */
-    color:#36663d;
+    color:#333;
     margin: 5px 0;
     font-style: italic;
     font-family: Montserrat;

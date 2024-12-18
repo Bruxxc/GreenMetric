@@ -2,7 +2,7 @@
 .Servicios_Main_Container{
     display: grid;
     justify-items: center;
-    background-image: url("/assets/resources/fondo_servicios.jpg");
+    background-image: url("../assets/resources/fondo_servicios.jpg");
     background-size:unset;
     background-position: center; 
     background-repeat: no-repeat; 
@@ -91,7 +91,7 @@
 }
 
 .Servicios_beneficios_list h4{
-    color:#618b35;
+    color:#4c983d;
     font-weight: bold;
 }
 

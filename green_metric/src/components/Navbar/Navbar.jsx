@@ -23,17 +23,17 @@ export const NavbarComponent = () => {
 
         <NavbarList className={styles.NavbarList}>
           <Link to="../"><NavbarItem className={styles.NavbarItem}>Inicio</NavbarItem></Link>
-         <NavbarItem className={styles.NavbarItem}><a href="../#nosotros-seccion">Nosotros</a></NavbarItem>
+          <Link to="../#nosotros-seccion"><NavbarItem className={styles.NavbarItem}>Nosotros</NavbarItem></Link>
           <Link to="/servicios"><NavbarItem className={styles.NavbarItem}>Servicios</NavbarItem></Link>
-          <NavbarItem className={styles.NavbarItem}><a href="../#contacto-seccion">Contactanos</a></NavbarItem>
+          <Link to="../#contacto-seccion"><NavbarItem className={styles.NavbarItem}>Contactanos</NavbarItem></Link>
         </NavbarList>
 
         <NavbarCollapseBtn />
         <NavbarCollapse className={styles.MobileCollapse}>
-          <NavbarItem className={styles.NavbarItem}><a href="../">Inicio</a></NavbarItem>
-          <NavbarItem className={styles.NavbarItem}><a href="../#nosotros-seccion">Nosotros</a></NavbarItem>
-          <NavbarItem className={styles.NavbarItem}><a href="/servicios">Servicios</a></NavbarItem>
-          <NavbarItem className={styles.NavbarItem}><a href="../#contacto-seccion">Contactanos</a></NavbarItem>
+          <Link className={styles.MainNavbarItem} to="../"><NavbarItem className={styles.NavbarItem}>Inicio</NavbarItem></Link>
+          <Link className={styles.MainNavbarItem} to="../#nosotros-seccion"><NavbarItem className={styles.NavbarItem}>Nosotros</NavbarItem></Link>
+          <Link className={styles.MainNavbarItem} to="../servicios"><NavbarItem className={styles.NavbarItem}>Servicios</NavbarItem></Link>
+          <Link className={styles.MainNavbarItem} to="../#contacto-seccion"><NavbarItem className={styles.NavbarItem}>Contactanos</NavbarItem></Link>
         </NavbarCollapse>
       </NavbarContainer>
     </Navbar>

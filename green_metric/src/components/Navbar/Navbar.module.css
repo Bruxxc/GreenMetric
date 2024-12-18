@@ -34,6 +34,16 @@
     margin-top: 20px; /* Espacio entre el logo y los ítems */
 }
   
+
+.MobileCollapse{
+  display: none;
+}
+
+
+.MainNavbarItem{
+  text-align: center;
+}
+
 .NavbarItem {
     margin: 0 15px;
     font-weight: bold !important;
@@ -45,7 +55,7 @@
     font-size: 13pt !important;
 }
 
-.linkedLI:hover{
+.linkedLI:hover {
     background-color: #e1dcd0 !important;
 }
 
@@ -81,6 +91,8 @@
     }
 
     .MobileCollapse{
+        display: grid !important; 
+        justify-content: center !important;
         border-radius: 0px !important;
         background-color: #eceae6 !important;
         margin-top: -10px !important;
