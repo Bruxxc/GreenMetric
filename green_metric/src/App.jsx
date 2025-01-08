@@ -9,7 +9,7 @@ import { useRef, useEffect } from "react";
 
 function App() {
   return (
-    <div className="App">
+    <div id="top" className="App">
       
       <NavbarComponent/>
       <div className="Content">

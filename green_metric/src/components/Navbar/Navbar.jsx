@@ -24,7 +24,7 @@ export const NavbarComponent = () => {
         <NavbarList className={styles.NavbarList}>
           <Link to="../"><NavbarItem className={styles.NavbarItem}>Inicio</NavbarItem></Link>
           <Link to="../#nosotros-seccion"><NavbarItem className={styles.NavbarItem}>Nosotros</NavbarItem></Link>
-          <Link to="/servicios"><NavbarItem className={styles.NavbarItem}>Servicios</NavbarItem></Link>
+          <Link to="/servicios#top"><NavbarItem className={styles.NavbarItem}>Servicios</NavbarItem></Link>
           <Link to="../#contacto-seccion"><NavbarItem className={styles.NavbarItem}>Contactanos</NavbarItem></Link>
         </NavbarList>
 
@@ -32,7 +32,7 @@ export const NavbarComponent = () => {
         <NavbarCollapse className={styles.MobileCollapse}>
           <Link className={styles.MainNavbarItem} to="../"><NavbarItem className={styles.NavbarItem}>Inicio</NavbarItem></Link>
           <Link className={styles.MainNavbarItem} to="../#nosotros-seccion"><NavbarItem className={styles.NavbarItem}>Nosotros</NavbarItem></Link>
-          <Link className={styles.MainNavbarItem} to="../servicios"><NavbarItem className={styles.NavbarItem}>Servicios</NavbarItem></Link>
+          <Link className={styles.MainNavbarItem} to="../servicios#top"><NavbarItem className={styles.NavbarItem}>Servicios</NavbarItem></Link>
           <Link className={styles.MainNavbarItem} to="../#contacto-seccion"><NavbarItem className={styles.NavbarItem}>Contactanos</NavbarItem></Link>
         </NavbarCollapse>
       </NavbarContainer>

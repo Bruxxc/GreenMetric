@@ -13,25 +13,25 @@ export const ServiciosPreview = () => {
                 <div className={styles.ServiciosPreview_List_Card}>
                     <img src="/assets/resources/Servicio1Alt.png" alt="" />
                     <h3>Elaboración de Reportes de Sostenibilidad</h3>
-                    <a href="/servicios"><button>Saber más</button></a>
+                    <Link to="/servicios"><button>Saber más</button></Link>
                 </div>
 
                 <div className={styles.ServiciosPreview_List_Card}>
                     <img src="/assets/resources/Servicio2Alt.png" alt="" />
                     <h3>Diagnóstico, Propuesta y Monitoreo de acciones de Sostenibilidad</h3>
-                    <a href="/servicios"><button>Saber más</button></a>
+                    <Link to="/servicios"><button>Saber más</button></Link>
                 </div>
 
                 <div className={styles.ServiciosPreview_List_Card}>
                     <img src="/assets/resources/Servicio3Alt.png" alt="" />
                     <h3>Consultoría en Gestión de la Sostenibilidad Empresarial</h3>
-                    <a href="/servicios"><button>Saber más</button></a>
+                    <Link to="/servicios"><button>Saber más</button></Link>
                 </div>
 
                 <div className={styles.ServiciosPreview_List_Card}>
                     <img src="/assets/resources/Servicio4Alt.png" alt="" />
                     <h3>Cálculo de la Huella de Carbono</h3>
-                    <a href="/servicios"><button>Saber más</button></a>
+                    <Link to="/servicios"><button>Saber más</button></Link>
                 </div>
 
 

@@ -1,6 +1,25 @@
 import styles from "./Servicios.module.css";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 export const Servicios = () => {
+    const location = useLocation();
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const hash = location.hash;
+            if (hash) {
+                const element = document.querySelector(hash);
+                if (element) {
+                    element.scrollIntoView({ behavior: "smooth" });
+                }
+            }
+        };
+
+        handleScroll(); // Llama al desplazamiento en cada cambio de ubicación
+    }, [location]); // Escucha cambios en `location`
+
+
     return (
        
         <div className={styles.Servicios_Main_Container}>

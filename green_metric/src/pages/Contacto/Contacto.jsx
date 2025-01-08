@@ -10,10 +10,10 @@ export const Contacto = () => {
 
     emailjs
       .sendForm(
-        "service_jalqigc", // Reemplaza con tu Service ID
-        "template_84wlj3h", // Reemplaza con tu Template ID
+        "service_jalqigc",
+        "template_84wlj3h",
         form.current,
-        "OjnPwePadqxug51w1" // Reemplaza con tu Public Key
+        "OjnPwePadqxug51w1"
       )
       .then(
         (result) => {
