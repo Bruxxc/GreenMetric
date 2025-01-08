@@ -4,11 +4,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #edeae6 !important;
+    background-color: #ffffff !important;
     position:fixed !important;
     z-index: 10 !important;
     width: 100% !important;
     height: 130px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
   }
   
   /* Contenedor del Navbar */
