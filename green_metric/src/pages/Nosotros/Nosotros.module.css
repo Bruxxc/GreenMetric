@@ -11,7 +11,7 @@
     font-family:Montserrat;
     font-style:italic;
     font-size: 32pt;
-    color:#ffffff;
+    color:#edeae6;
     font-weight: 800;
     margin-bottom: 30px;
 
@@ -45,7 +45,7 @@
 .Nosotros_List_Card {
     display: flex;
     align-items: center; /* Centra la imagen y el contenido verticalmente */
-    background-color: #ffffff; /* Fondo blanco */
+    background-color: #edeae6; /* Fondo blanco */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra elegante */
     border-radius: 16px; /* Bordes redondeados */
     overflow: hidden; /* Recorta contenido excedente */
@@ -129,7 +129,7 @@
 .Nosotros_List_Card_Right {
   display: flex;
   align-items: center; /* Centra verticalmente el contenido */
-  background-color: #ffffff; /* Fondo blanco */
+  background-color: #edeae6; /* Fondo blanco */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra elegante */
   border-radius: 16px; /* Bordes redondeados */
   overflow: hidden; /* Recorta contenido excedente */
