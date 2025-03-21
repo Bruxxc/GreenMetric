@@ -1,9 +1,14 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import styles from "./Contacto.module.css";
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content';
 
 export const Contacto = () => {
+  
   const form = useRef();
+
+  const MySwal = withReactContent(Swal);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -18,11 +23,27 @@ export const Contacto = () => {
       .then(
         (result) => {
           console.log(result.text);
-          alert("Correo enviado con éxito");
+
+          // Limpiar SOLO el campo de mensaje
+          form.current.message.value = "";
+
+          MySwal.fire({
+            icon: 'success',
+            title: '¡Correo enviado!',
+            text: 'Tu mensaje fue enviado correctamente.',
+            confirmButtonColor: '#28a745',
+            confirmButtonText: 'Entendido'
+          });
         },
         (error) => {
           console.log(error.text);
-          alert("Hubo un error al enviar el correo");
+          MySwal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Hubo un error al enviar el correo. Intenta nuevamente.',
+            confirmButtonColor: '#d33',
+            confirmButtonText: 'Ok'
+          });
         }
       );
   };
