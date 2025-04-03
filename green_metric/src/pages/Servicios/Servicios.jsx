@@ -57,7 +57,8 @@ export const Servicios = () => {
                         </div>
                     </div>
                     <div className={styles.Servicios_List_Card_Img}>
-                        <img src="/assets/resources/Servicio1.png" alt="" />
+                        <img src="/assets/resources/Servicio1.png" alt="Servicio 1" loading="lazy"/>
+                        
                     </div>
 
                     
@@ -66,7 +67,7 @@ export const Servicios = () => {
 
                 <div className={`${styles.Servicios_List_Card} ${styles.ItemDer}`}>
                     <div className={styles.Servicios_List_Card_Img}>
-                        <img src="/assets/resources/Servicio2.png" alt="" />
+                        <img src="/assets/resources/Servicio2.png" alt="Servicio de sostenibilidad" loading="lazy"/>
                     </div>
                     <div className={`${styles.Servicios_List_Card_Text} ${styles.text_Der}`}>
                         <h3>Diagnóstico, Propuesta y Monitoreo de acciones de Sostenibilidad</h3>
@@ -104,13 +105,13 @@ export const Servicios = () => {
                     </div>
 
                     <div className={styles.Servicios_List_Card_Img}>
-                        <img src="/assets/resources/Servicio3.png" alt="" />
+                        <img src="/assets/resources/Servicio3.png" alt="Servicio 2" loading="lazy"/>
                     </div>
                 </div>
 
                 <div className={`${styles.Servicios_List_Card} ${styles.ItemDer}`}>
                     <div className={styles.Servicios_List_Card_Img}>
-                        <img src="/assets/resources/Servicio4.png" alt="" />
+                        <img src="/assets/resources/Servicio4.png" alt="Servicio 3" loading="lazy"/>
                     </div>
                     <div className={`${styles.Servicios_List_Card_Text} ${styles.text_Der}`}>
                         <h3>Cálculo de la Huella de Carbono</h3>

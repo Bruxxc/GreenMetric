@@ -100,9 +100,10 @@ export const Contacto = () => {
           </form>
 
           <img
-            src="./assets/resources/ContactoImg.jpg"
+            src="./assets/resources/ContactoImg.webp"
             alt="ContactoEFIKO"
             className={styles.contacto_img}
+            loading="lazy"
           />
         </div>
       </div>

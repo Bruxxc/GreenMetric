@@ -11,6 +11,7 @@ export const Nosotros = () => {
               src="/assets/resources/Laura_Marquez3.jpg"
               alt="Laura Márquez / EFIKO"
               className={styles.LauraImg}
+              loading="lazy"
             />
           </div>
 
@@ -66,8 +67,9 @@ export const Nosotros = () => {
 
           <div className={styles.Nosotros_List_Card_Img}>
             <img
-              src="/assets/resources/Federico_Secondo.jpeg"
+              src="/assets/resources/Federico_Secondo.webp"
               alt="Federico Secondo / EFIKO"
+              loading="lazy"
             />
           </div>
         </div>

@@ -4,7 +4,7 @@
     height: 60vh; /* Altura del área visible */
     overflow: hidden; /* Oculta el resto de la imagen */
     position: relative;
-    background-image: url("../assets/resources/frente.jpg");
+    background-image: url("../assets/resources/frente.webp");
     background-position:bottom;
     background-repeat: no-repeat;
     background-size: cover;
